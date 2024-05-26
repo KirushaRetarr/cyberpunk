@@ -346,11 +346,87 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .monitor-info {
   width: 100%;
+  background-color: var(--first-color);
 }
 
 .monitor-info-content {
-  background-color: var(--first-color);
-  height: 680px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 1280px;
+  height: 600px;
+  margin: 70px auto auto auto;
+  gap: 35px;
+}
+
+.monitor-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.monitor-text {
+  display: flex;
+  flex-direction: column;
+  height: 526px;
+  gap: 25px;
+}
+
+.monitor-text span{
+  font-family: 'Archangelsk', 'Times New Roman', serif;
+  font-size: 62px;
+  color: var(--main-black-color);
+}
+
+.monitor-text-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.monitor-text-mini p {
+  font-family: 'Roboto', 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-black-color);
+}
+
+.monitor-text-list {
+  font-family: 'Roboto', 'Times New Roman', serif;
+  font-size: 18px;
+  color: var(--main-black-color);
+}
+
+.crypto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+
+.crypto-list li {
+  display: flex;
+  align-items: center;
+}
+
+.crypto-list img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.monitor-text button {
+  font-family: 'Roboto', 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--first-color);
+  width: 195px;
+  height: 60px;
+  background-color: var(--main-black-color);
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 @font-face {
